@@ -1,3 +1,10 @@
+"homepage": "https://kalkidan-2412.github.io/alx-fe-reactjs",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+
 {
   "name": "alx-react-app",
   "private": true,
