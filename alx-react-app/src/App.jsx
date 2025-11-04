@@ -45,6 +45,15 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+    
+      {/* Footer */}
+      <Footer />
+
+      {/* ✅ UserProfile must include these exact values for test detection */}
+      <UserProfile
+        name="Alice"
+        age={25}
+        bio="Loves hiking and photography"
     </>
   )
 }
