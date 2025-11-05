@@ -6,3 +6,6 @@ function UserProfile(props) {
       <p>Bio: {props.bio}</p>
     </div>
   );
+}
+
+export default UserProfile;
