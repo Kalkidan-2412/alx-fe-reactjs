@@ -1,4 +1,22 @@
+<<<<<<< HEAD:alx-react-app-new/src/components/Footer.jsx
 function Footer() {
+=======
+import React from 'react';
+function Footer() {
+  const footerStyle = {
+    backgroundColor: '#2c3e50',
+    color: '#ecf0f1',
+    padding: '1rem',
+    textAlign: 'center',
+    fontSize: '0.9rem',
+    fontFamily: 'Segoe UI, sans-serif',
+    borderTop: '4px solid #3498db',
+    marginTop: '3rem',
+    borderRadius: '0 0 12px 12px',
+    boxShadow: '0 -4px 8px rgba(0, 0, 0, 0.05)',
+  };
+
+>>>>>>> 6e2e3ad3893327d270ba3b941b54d75d9a0cb596:alx-react-app-new/alx-react-app/src/components/Footer.jsx
     return (
         <footer>
             <p>© 2023 City Lovers</p>
