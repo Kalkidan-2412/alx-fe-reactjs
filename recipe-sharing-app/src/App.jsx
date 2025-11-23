@@ -6,6 +6,60 @@ import './App.css'
 import AddRecipeForm from "./components/AddRecipeForm";
 import RecipeList from "./components/RecipeList";
 
+import React from 'react'
+<li key={r.id} className="mb-2">
+<Link to={`/recipes/${r.id}`} className="underline">
+{r.title}
+</Link>
+</li>
+))}
+</ul>
+
+
+<CreateRecipeInline />
+</div>
+)
+}
+
+
+// small inline create form for convenience
+const CreateRecipeInline = () => {
+const addRecipe = useRecipeStore((s) => s.addRecipe)
+
+
+const onCreate = () => {
+addRecipe({
+title: 'New Recipe',
+description: '',
+ingredients: [],
+steps: []
+})
+}
+
+
+return (
+<div className="mt-6">
+<button className="px-3 py-1 border rounded" onClick={onCreate}>
++ Create empty recipe
+</button>
+</div>
+)
+}
+
+
+export default function App() {
+return (
+<Router>
+<div className="max-w-3xl mx-auto">
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/recipes/:id" element={<RecipeDetails />} />
+<Route path="/recipes/:id/edit" element={<EditRecipeForm />} />
+</Routes>
+</div>
+</Router>
+)
+}
 function App() {
   return (
     <div style={{ width: "500px", margin: "0 auto", padding: "20px" }}>
