@@ -1,8 +1,4 @@
 import React, { useState } from 'react'
-
-
-return (
-<form onSubmit={onSubmit} className="p-4 max-w-xl">
 <div>
 <label className="block font-medium">Title</label>
 <input
