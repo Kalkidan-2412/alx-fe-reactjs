@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-<div>
 <label className="block font-medium">Title</label>
 <input
 value={form.title}
