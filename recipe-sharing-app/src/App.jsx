@@ -4,6 +4,9 @@ import HomePage from './pages/HomePage';
 import EditRecipeForm from './components/EditRecipeForm';
 import RecipeDetail from './pages/RecipeDetail';
 import AddRecipeForm from './components/AddRecipeForm'; // ✅ Import added
+import Dashboard from './pages/Dashboard';
+<Route path="/dashboard" element={<Dashboard />} />
+
 
 const App = () => {
   return (
