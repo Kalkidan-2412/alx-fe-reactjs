@@ -1,10 +1,19 @@
 import React from 'react'
+import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useRecipeStore } from '../store/recipeStore'
+import EditRecipeForm from './EditRecipeForm'
+import DeleteRecipeButton from './DeleteRecipeButton'
+
+
+const RecipeDetails = () => {
+const { id } = useParams()
 const recipe = useRecipeStore((s) => s.recipes.find((r) => r.id === id))
 const navigate = useNavigate()
 
 
 if (!recipe) {
 return (
+<div className="text-sm text-gray-500">ID: {recipe.id}</div>
 <div>
 <h2>Recipe not found</h2>
 <button onClick={() => navigate('/')}>Back to list</button>
@@ -49,3 +58,4 @@ Edit
 
 
 export default RecipeDetails
+```
