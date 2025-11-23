@@ -1,15 +1,16 @@
 import React from 'react';
-import SearchBar from '../components/SearchBar';
-import RecipeList from '../components/RecipeList';
+import FavoritesList from '../components/FavoritesList';
+import RecommendationsList from '../components/RecommendationsList';
 
-const HomePage = () => {
+const Dashboard = () => {
   return (
     <div className="max-w-4xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Recipe Sharing App</h1>
-      <SearchBar />
-      <RecipeList />
+      <FavoritesList />
+      <div className="mt-6">
+        <RecommendationsList />
+      </div>
     </div>
   );
 };
 
-export default HomePage;
+export default Dashboard;
